@@ -20,7 +20,8 @@ describe('2nd Deliverable', () => {
         expect(fetch).toHaveBeenCalledWith("http://localhost:6001/plants", {
             method: "POST",
             headers: {
-              "Content-Type": "Application/JSON",
+              "Content-Type": "Application/json",
+              "Accept": "application/json"
             },
             body: JSON.stringify(firstPlant),
         })
@@ -40,7 +41,8 @@ describe('2nd Deliverable', () => {
         expect(fetch).toHaveBeenCalledWith("http://localhost:6001/plants", {
             method: "POST",
             headers: {
-              "Content-Type": "Application/JSON",
+              "Content-Type": "Application/json",
+              "Accept": "application/json"
             },
             body: JSON.stringify(secondPlant),
         })
